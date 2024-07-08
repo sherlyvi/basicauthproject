@@ -18,10 +18,10 @@ class AuthController extends Controller
      * @return response()
      */
     public function display(){
-         if(Auth::check()){
+       
         $users=User::all();
         return view('dash',compact('users'));
-    }}
+    }
     public function index()
     {
         return view('auth.login');
